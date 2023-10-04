@@ -1,0 +1,30 @@
+1. Create table Users,Company,Roles
+2. Create SP Insert, update, delete
+3. Create sp for paging,sorting and searching
+4. Create View
+5. Create function for getting companyname and use this function into sp
+6. Create sp for Get company data in folliwing way using stuff and collease function
+    ID  CompanyName   Users
+	1     ABC         rachana,ashish
+	2     PQR		  chintan,hiren
+7. Create sp for Get User Data and restore into other table using table type
+8. Create sp for get  lists the number of users in each company
+9. Create sp for get  lists the number of users in each company where number of users greater than 10.
+10. Create sp for insert-update using merge
+11. Create index
+12. Create trigger
+13. Create sp using rank, partition by etc
+14. Create sp for  use cursor and while loop.
+
+
+	
+  
+  
+1. Create DB TESTDB
+2. Create table with all posible datatypes.
+3. Write query for Insert, update, delete(hard and soft).	
+4. Create sp for insert
+5. Create sp for Update
+6. Create sp for delete
+7. Create sp for upsert(Insert and Update)
+8. Create View and use this view in sp.

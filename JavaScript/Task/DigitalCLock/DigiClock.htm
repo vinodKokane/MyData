@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digi Clock</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+      .main {
+        margin: 100px auto;
+        width: 500px;
+        height: 500px;
+        font-size: 50px;
+      }
+      .inner-div {
+        text-align: center;
+        color: azure;
+      }
+      .hr {
+        float: left;
+        width: 30%;
+        color: blue;
+        font-size: 100px;
+        border: 7px inset yellow;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin: 5px;
+      }
+      .min {
+        margin: 5px;
+        float: left;
+        font-size: 100px;
+        width: 30%;
+        color: red;
+        border: 7px inset green;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      .sec {
+        margin: 5px;
+        font-size: 100px;
+        float: left;
+        width: 30%;
+        color: yellow;
+        border: 7px inset red;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="inner-div">
+        <div class="hr">00</div>
+        <div class="min">00</div>
+        <div class="sec">00</div>
+        <div style="clear: both"></div>
+      </div>
+    </div>
+
+    <script src="DigiClock.js"></script>
+  </body>
+</html>

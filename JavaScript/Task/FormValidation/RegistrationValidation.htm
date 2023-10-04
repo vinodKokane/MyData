@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="my-4">Registration</h1>
+    <form action="">
+
+      <!-- first row name -->
+      <div class="row my-2">
+        <div class="col-sm-3">
+          <label for="" class="form-label">Name :<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" name="fname" placeholder="Enter your Name" id="firstName"
+            onblur="isNameBlank()" onchange="nameRegualrEx_Validation()">
+        </div>
+        <div class="col-sm-4">
+          <h5 class="text-danger" id="msg1"></h5>
+          <h5 class="text-warning" id="warning-msg1"></h5>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="row my-2">
+        <div class="col-sm-3">
+          <label for="" class="form-label">Email :<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-5">
+          <input type="email" class="form-control" name="email" placeholder="Enter Your Email ID" id="emailID"
+            onblur="isEmailBlank()" onchange="emailRegularEx_Validation()">
+        </div>
+        <div class="col-sm-4">
+          <h5 class="text-danger" id="msg2"></h5>
+          <h5 class="text-warning" id="warning-msg2"></h5>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="row my-2">
+        <div class="col-sm-3">
+          <label for="" class="form-label">Mobile :<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" name="mobile" placeholder="Enter Your Mobile Number " id="mobileNo" min="10" max="10"
+            onblur="isMobileBlank()" onchange="mobileRegularEx_Validation()">
+        </div>
+        <div class="col-sm-4">
+          <h5 class="text-danger" id="msg3"></h5>
+          <h5 class="text-danger" id="warning-msg3"></h5>
+        </div>
+      </div>
+
+      <!-- Gender -->
+      <div class="row my-2">
+        <div class="col-sm-3">
+          <label for="" class="form-label">Gender :<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-5 d-flex p-2">
+          <input type="radio" name="gender" class="form-check mx-2" value="male" id="maleId"
+            onblur="return isGenderBlank()" onchange="">
+          <label for="">Male</label>
+          <input type="radio" name="gender" class="form-check mx-2" value="female" id="femaleId"
+            onblur="return isGenderBlank()">
+          <label for="">Female</label>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="text-danger" id="msg4"></h5>
+        </div>
+      </div>
+
+      <!-- Date Of Birth -->
+      <div class="row my-2">
+        <div class="col-sm-3">
+          <label for="" class="form-label">DOB :<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-5">
+          <input type="date" name="dob" class="form-control" id="dateID" onblur="isDate_Blank()">
+        </div>
+        <div class="col-sm-4">
+          <h5 class="text-danger" id="msg5"></h5>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="row my-2">
+        <div class="col-sm-3">
+          <label for="" class="form-label">Address :<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-5">
+          <textarea type="text" class="form-control" id="textAreaID" onblur="isAddressBlank()"></textarea>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="text-danger msg6"></h5>
+        </div>
+      </div>
+
+      <!-- city -->
+      <div class="row my-2">
+        <div class="col-sm-3">
+          <label for="" class="form-label">City :<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-5">
+          <select name="" id="selectID" class="form-select" onblur="isCityBlank()">
+            <option value="default">---Select---</option>
+            <option value="nashik">Nashik</option>
+            <option value="pune">Pune</option>
+            <option value="surat">Surat</option>
+          </select>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="text-danger msg7"></h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <input type="submit" value="Submit" class="btn btn-success" onclick="return formValidation()"></button>
+        </div>
+        <div class="col-sm-6"></div>
+      </div>
+    </form>
+  </div>
+
+  <script src="Registration.js"></script>
+</body>
+
+</html>

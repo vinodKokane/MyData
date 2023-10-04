@@ -1,0 +1,18 @@
+USE [Customer]
+GO
+
+INSERT INTO [dbo].[Customer]
+           ([CustomerID]
+           ,[CustomerName])
+     VALUES
+           (2,
+			'Mahesh')
+GO
+INSERT INTO [dbo].[Customer]
+			([CustomerID]
+			,[CustomerName])
+		VALUES
+			(3,
+			'RAM')
+GO
+SELECT * FROM Customer;

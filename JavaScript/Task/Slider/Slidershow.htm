@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sliders {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 5px 5px 12px black, 5px 5px 12px black;
+        }
+
+        .fa-hand-point-left {
+            position: absolute;
+            top: 200px;
+            left: 0;
+            font-size: 50px;
+        }
+
+        .fa-hand-point-right {
+            position: absolute;
+            top: 200px;
+            right: 0;
+            font-size: 50px;
+        }
+
+        .image-buttons {
+            position: absolute;
+            bottom: 0px;
+            left: 560px;
+            align-items: center;
+        }
+
+        .radioBtn {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
+
+        .play_pause_btn {
+            text-align: center;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+            color: white;
+            font-size: 40px;
+            gap: 20px;
+        }
+        .playBtn{
+            background-color: brown;
+            border-radius: 50%;
+        }
+        .pauseBtn{
+            background-color: brown;
+            border-radius: 50%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="sliders">
+        <div class="slide">
+            <img src="Images/coffee-beans-top-view-white-background-space-text_176474-5028.jpg" alt="" id="image1">
+        </div>
+        <button class="fa-solid fa-hand-point-left" value="prev" onclick='{prevNaxtImage(this)}'></button>
+        <button class="fa-solid fa-hand-point-right" value="next" onclick='{prevNaxtImage(this)}'></button>
+        <div class="image-buttons">
+            <input type="radio" name="radio" id="" value="0" class="radioBtn" onchange="{change_Slide_Image(this)}">
+            <input type="radio" name="radio" id="" value="1" class="radioBtn" onchange="{change_Slide_Image(this)}">
+            <input type="radio" name="radio" id="" value="2" class="radioBtn" onchange="{change_Slide_Image(this)}">
+            <input type="radio" name="radio" id="" value="3" class="radioBtn" onchange="{change_Slide_Image(this)}">
+            <input type="radio" name="radio" id="" value="4" class="radioBtn" onchange="{change_Slide_Image(this)}">
+        </div>
+        <div class="play_pause_btn">
+            <div class="fa-solid fa-circle-play playBtn" data-value="play" onclick="{playSlideshow()}"></div>
+            <div class="fa-solid fa-circle-pause pauseBtn" data-value="pause" onclick="{pauseSlideshow()}"></div>
+        </div>
+    </div>
+    <script src="JS/Slidershow.js"></script>
+</body>
+
+</html>

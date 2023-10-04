@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+    <!-- Jquery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js">
+    </script>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        #first {
+            display: none;
+        }
+
+        .active {
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body class="bg-black">
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button class="btn btn-warning float-end" id="addNew">Add New</button>
+                        <label for="addNew" class="float-end text-danger fw-bold mx-2">Want to add Info please Click
+                            here
+                            -----&gt;</label>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-sm-12">
+                        <table class="table table-striped" id="myTab">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Name</th>
+                                    <th>Mobile</th>
+                                    <th>City</th>
+                                    <th>Country</th>
+                                    <th>PinCode</th>
+                                    <th colspan="2" class="text-center">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr id="first">
+                                    <form action="#" id="formId" method="get">
+                                        <td> <input type="text" class="form-control" name="firstName" placeholder="Name"
+                                                id="userName" >
+                                        </td>
+                                        <td> <input type="text" class="form-control" name="mobile" placeholder="Mobile"
+                                                id="userMobile" >
+                                        </td>
+                                        <td> <input type="text" class="form-control" name="city" placeholder="City"
+                                                id="userCity" >
+                                        </td>
+                                        <td> <input type="text" class="form-control" name="country" id="userCountry"
+                                                placeholder="Country" ></td>
+                                        <td> <input type="text" class="form-control" name="pincode" id="userPincode"
+                                                placeholder="PinCode" ></td>
+                                        <td class="text-center" colspan="2"><input type="button"
+                                                class="btn btn-primary w-100" id="addBtn" value="Add"></td>
+                                    </form>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+
+    
+
+    <script src="Js/Index.js"></script>
+</body>
+
+</html>

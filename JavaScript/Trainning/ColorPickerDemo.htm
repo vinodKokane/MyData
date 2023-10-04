@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        margin: 100px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="color" name="" id="col" />
+    <input type="file" name="" id="file" />
+    <select name="" id="select" onchange="selectColor()">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+      <option value="blue">Blue</option>
+    </select>
+    <button class="btn" onclick="changerColor()">Add</button>
+    <div id="box"></div>
+
+    <script>
+      var color = document.getElementById("col");
+      var box = document.getElementById("box");
+      var bg_wallpaper = document.getElementById("file");
+      var Pc_Image_path = "C:\\Vinod\\JavaScript\\Trainning\\Images";
+      var selectDrp = document.getElementById("select");
+
+      function selectColor() {
+        box.style.backgroundColor = selectDrp.value;
+      }
+
+      function changerColor() {
+        box.style.backgroundColor = color.value;
+        // document.body.style.backgroundColor = color.value;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+// let imgPath = bg_wallpaper.value;
+// console.log(imgPath);
+// let img_Src = imgPath.split("C:\\fakepath\\");
+// console.log(img_Src);
+// document.body.style.backgroundImage = `url(${
+//   Pc_Image_path + img_Src[1]
+// })`;
+// document.body.style.backgroundImage = "url('C:\\Vinod\\JavaScript\\Trainning\\Images\\img_src[1]')";
+// console.log(`url(${Pc_Image_path + img_Src[1]})`); -->
